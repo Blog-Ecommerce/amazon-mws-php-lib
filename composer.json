@@ -1,0 +1,40 @@
+{
+  "name": "capsule-b/amazon-mws-php-lib",
+  "description": "PHP Library for the Amazon MWS API",
+  "keywords": [
+    "php", "library", "amazon", "mws", "products", "api"
+  ],
+  "type": "library",
+  "license": "LGPL-3.0-or-later",
+  "homepage": "https://github.com/Blog-Ecommerce/amazon-mws-php-lib",
+  "authors": [{
+    "name": "Luis Da Costa",
+    "email": "luis@blog-ecommerce.com",
+    "homepage": "https://capsule-b.com"
+  }],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1.0",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-simplexml": "*",
+    "ext-libxml": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "support": {
+    "issues": "https://github.com/Blog-Ecommerce/amazon-mws-php-lib/issues",
+    "source": "https://github.com/Blog-Ecommerce/amazon-mws-php-lib"
+  },
+  "autoload": {
+    "psr-4": {
+      "CapsuleB\\AmazonMWS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CapsuleB\\AmazonMWS\\Test\\": "test/"
+    }
+  }
+}

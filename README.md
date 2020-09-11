@@ -1,1 +1,1 @@
-amazon-mws-php-lib
+PHP Library for the Amazon MWS API
