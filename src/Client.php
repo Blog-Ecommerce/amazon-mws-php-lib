@@ -394,6 +394,7 @@ class Client {
    * @return array
    */
   private function formatResponse(string $action, string $response) {
+    $response = str_replace("ns2:","", $response);
     $responseXML = simplexml_load_string(trim($response), "SimpleXMLElement", LIBXML_NOCDATA);
     return json_decode(json_encode($responseXML->{$action . 'Result'}), true);
   }
