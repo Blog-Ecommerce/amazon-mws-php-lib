@@ -228,6 +228,9 @@ class Client {
    * @throws Exception
    */
   protected function request(string $method, array $base, string $action, $query = [], $params = []) {
+    // Init the Curl Client
+    $this->curlClient = curl_init();
+
     // Generate missing information for the query
     $query = array_merge($query, [
       'AWSAccessKeyId'    => $this->accessKey,
@@ -266,10 +269,10 @@ class Client {
     }
 
     // Return headers seperatly from the Response Body
-    $response     = curl_exec($this->curlClient);
-    $header_size  = curl_getinfo($this->curlClient, CURLINFO_HEADER_SIZE);
-    $httpcode     = curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
-    $headers      = $this->formatHeader(substr($response, 0, $header_size));
+    $response   = curl_exec($this->curlClient);
+    $headerSize = curl_getinfo($this->curlClient, CURLINFO_HEADER_SIZE);
+    $httpCode   = curl_getinfo($this->curlClient, CURLINFO_HTTP_CODE);
+    $headers    = $this->formatHeader(substr($response, 0, $headerSize));
 
     // Close the connection
     curl_close($this->curlClient);
