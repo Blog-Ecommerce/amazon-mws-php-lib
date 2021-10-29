@@ -20,24 +20,28 @@ class Client {
   const ENDPOINTS = [
     // North America region
     [
+      'region'          => 'NA',
       'marketplace'     => 'Brazil',
       'country_code'    => 'BR',
       'endpoint'        => 'mws.amazonservices.com',
       'marketplace_id'  => 'A2Q3Y263D00KWC'
     ],
     [
+      'region'          => 'NA',
       'marketplace'     => 'Canada',
       'country_code'    => 'CA',
       'endpoint'        => 'mws.amazonservices.ca',
       'marketplace_id'  => 'A2EUQ1WTGCTBG2'
     ],
     [
+      'region'          => 'NA',
       'marketplace'     => 'Mexico',
       'country_code'    => 'MX',
       'endpoint'        => 'mws.amazonservices.com.mx',
       'marketplace_id'  => 'A1AM78C64UM0Y8'
     ],
     [
+      'region'          => 'NA',
       'marketplace'     => 'US',
       'country_code'    => 'US',
       'endpoint'        => 'mws.amazonservices.com',
@@ -46,66 +50,77 @@ class Client {
 
     // Europe region
     [
+      'region'          => 'EU',
       'marketplace'     => 'United Arab Emirates (U.A.E.)',
       'country_code'    => 'AE',
       'endpoint'        => 'mws.amazonservices.ae',
       'marketplace_id'  => 'A2VIGQ35RCS4UG'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Germany',
       'country_code'    => 'DE',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A1PA6795UKMFR9'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Egypt',
       'country_code'    => 'EG',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'ARBP9OOSHTCHU'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Spain',
       'country_code'    => 'ES',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A1RKKUPIHCS9HS'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'France',
       'country_code'    => 'FR',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A13V1IB3VIYZZH'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'UK',
       'country_code'    => 'GB',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A1F83G8C2ARO7P'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'India',
       'country_code'    => 'IN',
       'endpoint'        => 'mws.amazonservices.in',
       'marketplace_id'  => 'A21TJRUUN4KGV'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Italy',
       'country_code'    => 'IT',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'APJ6JRA9NG5V4'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Netherlands',
       'country_code'    => 'NL',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A1805IZSGTT6HS'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Saudi Arabia',
       'country_code'    => 'SA',
       'endpoint'        => 'mws-eu.amazonservices.com',
       'marketplace_id'  => 'A17E79C6D8DWNP'
     ],
     [
+      'region'          => 'EU',
       'marketplace'     => 'Turkey',
       'country_code'    => 'TR',
       'endpoint'        => 'mws-eu.amazonservices.com',
@@ -114,18 +129,21 @@ class Client {
 
     // Far East region
     [
+      'region'          => 'FE',
       'marketplace'     => 'Singapore',
       'country_code'    => 'SG',
       'endpoint'        => 'mws-fe.amazonservices.com',
       'marketplace_id'  => 'A19VAU5U5O7RUS'
     ],
     [
+      'region'          => 'FE',
       'marketplace'     => 'Australia',
       'country_code'    => 'AU',
       'endpoint'        => 'mws.amazonservices.com.au',
       'marketplace_id'  => 'A39IBJ37TRP1C6'
     ],
     [
+      'region'          => 'FE',
       'marketplace'     => 'Japan',
       'country_code'    => 'JP',
       'endpoint'        => 'mws.amazonservices.jp',
